@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+    color: rgb(127, 156, 253);
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serife;
+    padding-left: 30px;
+    text-align: justify;
+}
+.contin {
+    width: 88%;
+    margin: auto;
+}
+
+form {
+    padding-left: 40px;
+    margin: auto;
+}
+
+form div input {
+    height: 30px;
+    margin-bottom: 22px;
+}
+
+form label {
+    color: rgb(92, 91, 128);
+    font-size: x-large;
+    padding: 6px;
+}
+
+form div label {
+    display: block;
+}
+/* select first label after the i/p */
+.radio1 input:checked +label{
+color: rgb(219, 102, 102);
+}
+
+.radio1  input::before {
+    color:rgb(150, 139, 120);
+    content: '\2661';
+  position: relative;
+   top: -34px;
+   right: 11px;
+   font-size: 50px;
+
+}
+
+.radio1 input:checked::before {color: rgb(169, 167, 240);}
+  .radio1 input:hover::before{  color: red;
+}

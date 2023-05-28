@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- cdn for remixicon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/book.css">
+   
+
+  </head>
+  <body>
+    <!-- start nav   -->
+    <nav class="navbar navbar-expand-lg bg-light">
+   
+      <div class="container-fluid ">
+    
+   <div class="logo">
+    <h3>
+      <a> <img src="./images/hospital-clinic-plus-logo-7916383C7A-seeklogo.com.png " width="12%"  alt="logo"> </a>
+      <span> Cure hospital</span>
+    </h3>
+   </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation ">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ">
+            
+            <li class="nav-item ">
+             
+              <a class="nav-link active " href="index.html">  
+              <i class="ri-home-gear-line"></i> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active " href="service.html">
+                <i class="ri-settings-4-line"></i> Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active "  href="about.html">
+                <i class="ri-user-5-line"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active " href="book.html">
+           <i class="ri-health-book-line"></i>
+                Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active " href="Career.html">
+                <i class="ri-briefcase-line"></i>
+                Career</a>
+            </li>
+           
+
+          </ul>
+    
+        </div>
+      </div>
+    </nav>
+    <!-- end navvvvvvvvvvv //////////////////////////// -->
+
+ <div class="container mt-2">
+    <!-- start search ////////////////////////////////// -->
+
+  <div class="search my-3 px-5">
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" onclick="search();" type="submit">Search</button>
+      </form> 
+</div> 
+<!-- end search   /////////////////////////////// -->
+
+</div>
+<!-- //////////////////start booking form /////////////// -->
+<div class="contin">
+    <h1>Book an Appointment</h1>
+    <p>To book an appointment, kindly call <span style="color: rgb(219, 102, 102);">011589</span> or submit your
+        request to book an appointment at the earliest available timing</p>
+    <form action="./bookAccept.html" method="get" id="form1" >
+        <div class="">
+            <label for="firstName" > Name | الإسم *</label>
+            <input type="text" required name="firstName" id="firstName" placeholder="Enter FirstName"
+                style="width:43%;">
+
+            <input type="text" required name="lastName" id="lastName" placeholder="Enter LastName"
+                style="width:43%;">
+
+            <label for="Phone">Phone Number |رقم الهاتف *</label>
+            <input type="number" required name="phone" id="phone" style="width:88%;" placeholder="Phone Number"
+                min="0">
+
+            <label for="mail"> E-mail| البريد الإلكتروني* </label>
+            <input type="email" name="mail" id="mail" style="width:88%;" required>
+
+            <label for="address"> Address | العنوان </label>
+            <textarea name="address" id="address" cols="98" rows="6"></textarea>
+        </div>
+        <!-- speciality -->
+        <p style="font-size:x-large; color: rgb(126, 136, 223);"> Speciality | التخصص * </p>
+      <span class="radio1">
+        <input type="radio" name="speciality" id="IP" required>
+        <label> Pediatrics and Paediatrics surgery | طب وجراحة الأطفال</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label>  Orthopedics Pediatrics | طب الأطفال</label> <br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Orthopedic Surgery | جراحة العظام</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Neurosurgery | جراحة الاعصاب</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label>  Ophthalmology | طب العيون</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Dentistry | طب الأسنان</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Dermatology | الجلدية</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Ear, Nose & Throat | أنف وأذن وحنجرة</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Nutrition & Obesity | التغذية والسمنة</label><br>
+         <input type="radio" name="speciality" id="" required>
+        <label> Blood Diseases | أمراض الدم</label> <br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Breast Health | صحة الثدي</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Cardiology | طب القلب</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Cardiothoracic Surgery | جراحة القلب والصدر</label><br>
+         <input type="radio" name="speciality" id="" required>
+        <label> Gastro-Intestinal (GIT) | الجهاز الهضمي</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Gynecology & Obstetrics | أمراض النساء والتوليد</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Internal Medicine | الطب الباطني</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Interventional Radiology | الأشعة التداخلية</label><br>
+        <input type="radio" name="speciality" id="" required>
+        <label> Kidney Diseases | أمراض الكلى</label><br>
+
+        <br>
+     
+        <!-- Request Type  -->
+
+        <p style="font-size:x-large; color: rgb(126, 136, 223);"> Request Type | نوع الطلب * </p>
+        <input type="radio" name="requestType" id="" required>
+        <label> Outpatient Clinic | العيادات الخارجية</label><br>
+        <input type="radio" name="requestType" id="" required>
+        <label> Home Visit | زيارة منزلية</label><br>
+        <input type="radio" name="requestType" id="" required>
+        <label> Tele-medicine Consultation | استشارة هاتفية</label><br>
+      </span>
+<br>
+        <center><input type="submit" value="send | إرسال" 
+                style="width:20%; height: 50px; color: rgb(126, 136, 223); font-size: large; border: 3px groove; border-radius: 9px;">
+        </center>
+        <br>
+    </form>
+</div>
+
+<!-- //////////////////end booking form /////////////// -->
+<footer>
+    <div class="p-5 ">
+        <p> <i class="ri-map-pin-line"></i> 
+           <span> Address is :  119 N Salisbury NC 2760</span>
+           </p>
+       <p><i class="ri-mail-line"></i>
+       <span>Mail is : info@cure.com</span>
+       </p>
+       <p>
+           <i class="ri-smartphone-line"></i>
+           <span> Phone to contact is : 245-257-257-2468</span>
+       </p>
+       
+       </div>
+  </footer>
+  <script src="js/book.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    </body>
+  </html>

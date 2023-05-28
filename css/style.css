@@ -1,0 +1,124 @@
+
+li.nav-item a {
+    position: relative;
+    transition: all .9s linear;
+    -webkit-transition: all .9s linear;
+    -moz-transition: all .9s linear;
+    -ms-transition: all .9s linear;
+    -o-transition: all .9s linear;
+}
+  
+li.nav-item:hover a {
+    color: rgb(55, 113, 180) !important;
+    /* font-size: larger; */
+}
+
+li.nav-item a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(55, 113, 180);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: width .7s ;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    -webkit-transition: width .7s ;
+    -moz-transition: width .7s ;
+    -ms-transition: width .7s ;
+    -o-transition: width .7s ;
+}
+
+li.nav-item a:hover::before {
+    width: 100%;
+  }
+
+  
+ 
+    
+.logo h3 span{
+    color: transparent ;
+     -webkit-background-clip:text;
+      background-image: url('..//images/100.webp') ;
+}
+/* end nav //////////////////// */
+ /* start slider//////////////////////// */
+.bookingText{
+      background-color: rgb(250, 104, 104);
+      width:max-content;
+      padding: 15px;
+      height: 60px;
+      border-radius:25px;
+      text-align: center;
+      color: rgb(22, 117, 62);
+      position: absolute;
+      top: 60px;
+      left: 4%;
+      font-size: larger;
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      -ms-border-radius:25px;
+      -o-border-radius:25px;
+}
+.bookingText a {
+text-decoration: none;
+color: rgb(22, 117, 62);
+}
+.bookingText:hover{
+    background-color: rgb(255, 255, 255);
+   width: 300px;
+}
+.caption{
+    background-color: rgb(150, 141, 235);
+    width:200px;
+    padding: 15px;
+    border-radius:25px;
+    text-align: center;
+    color:white;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    font-size: larger;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    -ms-border-radius:25px;
+    -o-border-radius:25px;
+}
+.caption:hover{
+    background-color: rgb(90, 37, 235);
+    width:220px;
+}
+.linkPage{
+    background-color: rgb(69, 69, 148);
+    width:max-content;
+    padding: 15px;
+    border-radius:15px;
+    text-align: center;
+    color:white;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+}
+.linkPage a{
+    text-decoration: none;
+   color: white;
+}
+.linkPage:hover{
+    background-color: blue;
+    width: 120px;
+}
+footer{
+    background-color:grey;
+    color: white;
+}
+footer i{
+    color:  rgb(150, 141, 235);;
+
+}

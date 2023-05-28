@@ -1,0 +1,49 @@
+.contain {
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    margin: auto;
+    padding: 4px;
+}
+
+.contain .speciality,.location,.booking {
+    width: 30%;
+    margin: 15px 23px;
+    border-top: solid 6px rgb(150, 141, 235) !important;
+    border: solid 2px rgba(238, 234, 234, 0.863);
+    box-shadow: 4px 4px rgba(128, 128, 128, 0.356);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.contain h3 {
+    text-align: center;
+    color:  rgb(69, 69, 148);
+}
+
+.contain p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serife;
+    padding: 0px 22px;
+    text-align: justify;
+}
+.contain a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 2px;
+    color:rgb(83, 41, 182) ;
+    font-size: larger;
+
+}
+
+
+.center , .center p{text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+    color: rgb(61, 61, 141);
+    text-decoration: none;
+}
+.center a{color: rgb(247, 185, 104);
+
+}
