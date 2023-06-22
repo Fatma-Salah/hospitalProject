@@ -1,14 +1,27 @@
-.contain {
-    display: flex;
-    justify-content: space-between;
-    width: 93%;
-    margin: auto;
-    padding: 4px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+main{
+    overflow: hidden;
+    max-width: 100%;
+}
+.contain {   
+    padding: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .contain .speciality,.location,.booking {
-    width: 30%;
-    margin: 15px 23px;
+    
     border-top: solid 6px rgb(150, 141, 235) !important;
     border: solid 2px rgba(238, 234, 234, 0.863);
     box-shadow: 4px 4px rgba(128, 128, 128, 0.356);

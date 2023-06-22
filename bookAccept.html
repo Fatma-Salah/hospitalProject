@@ -6,41 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking accept</title>
-
+<link rel="stylesheet" href="css/bootstrap.css">
     <style>
-        .paragraph::before {
-            content: '';
-            position: absolute;
-            left: 14%;
-            border: 22px solid;
-            border-color: transparent rgb(4, 92, 30) transparent transparent;
-        }
-    </style>
+
+@media  (min-width: 900px) {
+    .bookingAccept{
+        min-height: 100vh;
+        position: relative;
+    }
+    .child{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50%;
+    }
+}
+</style>
 </head>
 
-<body style="height:600px ;width:100%; ">
 
-    <div class="parent"
-        style="width:73%; padding: 30px 0px ; margin: 50px auto ;border-radius: 3% 17%; box-shadow: 15px 12px 5px grey; background:rgb(146, 95, 163); ">
-
-        <h1 style="text-align:center; color:lightgreen; padding-bottom: 20px ;">Success !
-        </h1>
-        <div style=" font-size: x-large; padding: 0px 52px; text-align: justify;">
-            <p class="paragraph" style="color: white;">you booking in : <span style="color: black;">(Name of Department
-                    )</span> clinic .
-            </p> <br>
-            <p class="paragraph" style="color: white;"><span style="color: black;">( Department Name)</span>
-                appointments is ( 2 PM - 12 AM ) .
-            </p><br>
-
-            <p class="paragraph" style="color: white;">we will cantact with you by mail or phone to tell you the
-                appointment ,please check your email permanently.
-                .</p>
-            <br>
-            <p style="text-align: center; color:lightgreen">we wish you good health and happiness
-            </p>
-        </div>
+    <!--start booking accept alert  -->
+<div class="bookingAccept">
+    <div class="child alert alert-success   m-auto" role="alert">
+     
+          <h1 class="text-center">Success !</h1>
+          <div style=" font-size: x-large; padding: 0px 52px; text-align: justify;">
+              <p  >you booking in : <span class="deptName fw-bold text-dark" ></span> clinic .
+              </p> 
+              <p  ><span class="deptName fw-bold text-dark" > </span>
+                  appointments is ( 2 PM - 12 AM ) .
+              </p><br>
+  
+              <h3 >we will cantact with you by mail or phone to tell you the
+                  appointment ,please check your email permanently.
+              </h3>
+              <br>
+              <p style="text-align: center;color: rgb(126, 136, 223);">we wish you good health and happiness
+              </p>
+          </div>
     </div>
+  </div>
+  <!--end booking accept alert  -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>    
+  <script src="js/book.js"></script>
 </body>
 
 </html>

@@ -37,7 +37,7 @@ form div label {
 color: rgb(219, 102, 102);
 }
 
-.radio1  input::before {
+/* .radio1  input::before {
     color:rgb(150, 139, 120);
     content: '\2661';
   position: relative;
@@ -49,4 +49,4 @@ color: rgb(219, 102, 102);
 
 .radio1 input:checked::before {color: rgb(169, 167, 240);}
   .radio1 input:hover::before{  color: red;
-}
+} */
